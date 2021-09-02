@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css" integrity="sha512-SvJR34InARUfJb279ipE/gjQqX11MDKaly9MNb0vevuWQJmZ23UH7F/65ScEsvLI+myKGbdfA1En82wVSCHQ8A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        #attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        #attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        html {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        
+        button {
+            background-color: hsl(245, 75%, 52%);
+            box-shadow: rgba(11, 33, 236, 0.19) 0px 10px 20px, rgba(8, 6, 156, 0.23) 0px 6px 6px;
+        }
+        
+        button:hover {
+            background-color: hsl(245, 65%, 64%);
+            box-shadow: rgba(82, 92, 179, 0.342) 0px 10px 20px, rgba(84, 82, 187, 0.644) 0px 6px 6px;
+        }
+        
+        body {
+            background-image: url(./images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+        }
+        
+        #primaryfont {
+            color: hsl(223, 47%, 23%);
+        }
+        
+        #secondaryfont {
+            color: #8d95a5;
+        }
+        
+        #card1 {
+            background-color: rgba(248, 249, 254, 255);
+        }
+        
+        #card2 {
+            color: #3129ce;
+        }
+        
+        #card2:hover {
+            color: #7b77ce;
+        }
+    </style>
+</head>
+
+<body class="md:p-0 px-3 py-3  md:my-12 my-20 mx-2">
+
+    <div class="flex flex-col gap-0 justify-center items-center mx-auto bg-white filter drop-shadow-2xl md:w-96 w-80   rounded-2xl  ">
+        <div class="grid grid-cols-1 md:gap-2 justify-center itmes-center text-center pb-4 ">
+            <img class="rounded-t-2xl " src="./images/illustration-hero.svg " alt=" ">
+            <h1 id="primaryfont" class="md:text-3xl text-2xl font-extrabold mt-8 "> Order Summary</h1>
+            <h2 id="secondaryfont" class="mx-12 text-center md:mt-3  md:text-lg text-base">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+            </h2>
+        </div>
+        <div>
+            <div id="card1" class="relative grid grid-cols-2 gap-12 items-center justify-center my-2 mb-4 rounded-2xl mx-10 pl-8">
+                <div class="flex justify-center items-center gap-3 my-3 ">
+                    <img class="w-10 h-10" src="./images/icon-music.svg " alt=" ">
+                    <h1 class="text-sm font-semibold ">
+                        <div id="primaryfont" class=" ">Annual Plan</div>
+                        <div id="secondaryfont">$59.99/year
+                        </div>
+                    </h1>
+                </div>
+                <a class="absolute right-4 text-sm underline hover:no-underline font-semibold " id="card2" href=""> Change
+            </a>
+
+
+            </div>
+            <div class="grid grid-cols-1 gap-3 text-center items-center justify center pb-3 ">
+                <button class="rounded mx-10 py-2 text-white ">Proceed to Payment</button>
+
+                <h3 class="text-s hover:text-black text-gray-300 font-semibold"> Cancel Order</h3>
+            </div>
+        </div>
+    </div>
+    <div id="attribution" class="font-base text-lg">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">Tushar </a>.
+    </div>
+</body>
+
+</html>
